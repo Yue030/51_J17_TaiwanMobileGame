@@ -47,7 +47,8 @@ body {
 }
 
 .container {
-    margin: 0 10vw;
+    max-width: 1140px;
+    margin: 0 auto;
     padding-top: 10vh;
 }
 
