@@ -32,13 +32,28 @@
                 <a href="#leg">LOL</a>
                 <a href="#apex">APEX</a>
             </div>
-            
+
             <div class="view">
-                <img src="/img/games/gtav.jpg" alt="" id="gta">
-                <img src="/img/games/amazon.jpg" alt="" id="amazon" style="display: none;">
-                <img src="/img/games/genshin-hero-mobile.jpg" alt="" id="genshin" style="display: none;">
-                <img src="/img/games/LEG.jpg" alt="" id="leg" style="display: none;">
-                <img src="/img/games/Apex.jpg" alt="" id="apex" style="display: none;">
+                <div id="gta" class="item">
+                    <img src="/img/games/gtav.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore est illo veniam quidem non sit. A voluptatem eius vel itaque cum fugiat! Commodi sed dolor id? Possimus minus molestias sunt.</p>
+                </div>
+                <div id="amazon" class="item" style="display: none;">
+                    <img src="/img/games/amazon.jpg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quaerat velit accusamus itaque minima! Rem culpa tenetur accusantium optio, architecto nihil neque repellendus repellat eveniet ipsa quo error? Nisi, eligendi.</p>
+                </div>
+                <div id="genshin" class="item" style="display: none;">
+                    <img src="/img/games/genshin-hero-mobile.jpg" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas in dolore impedit expedita distinctio minus eligendi, iure suscipit. Iste eum, numquam veritatis enim quia assumenda minima corrupti perferendis deserunt alias.</p>
+                </div>
+                <div id="leg" class="item" style="display: none;">
+                    <img src="/img/games/LEG.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate facilis eligendi pariatur fugiat molestiae quas ex dolor dicta, delectus cumque nisi vero inventore deserunt dolorum ipsam eos harum adipisci!</p>
+                </div>
+                <div id="apex" class="item" style="display: none;">
+                    <img src="/img/games/Apex.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea tenetur nemo et odio est, quae non inventore sint rerum minima in ipsam enim amet consectetur ratione necessitatibus perspiciatis porro?</p>
+                </div>
             </div>
         </div>
     </main>
@@ -51,7 +66,7 @@
 </body>
 <script>
     $(".map>a").click(function () {
-        $(".view>img").css("display", "none");
+        $(".view>div").css("display", "none");
         let id = $(this).attr("href");
         $(id).fadeIn();
     });
