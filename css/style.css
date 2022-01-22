@@ -5,27 +5,25 @@
     font-family: Arial, "微軟正黑體", sans-serif;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
+header {
+    background: #333;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100;
     padding: 10px 25px;
-    background: #333;
 }
 
-.navbar img {
+nav img {
     height: 64px;
     width: 64px;
 }
 
-.navbar .nav-item {
+nav .nav-item {
     display: flex;
     justify-content: space-around;
 }
@@ -34,7 +32,7 @@ body {
     color: dodgerblue !important;
 }
 
-.navbar .nav-item a {
+nav .nav-item a {
     margin: 5px 20px;
     color: white;
     text-decoration: none;
@@ -42,18 +40,23 @@ body {
     transition: 0.2s;
 }
 
-.navbar .nav-item a:hover {
+nav .nav-item a:hover {
     color: dodgerblue;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 main {
+    padding-top: 10vh;
     min-height: calc(100vh - 100px - 2rem);
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding-top: 10vh;
 }
 
 .cards {
@@ -177,6 +180,7 @@ main {
 .device-pic {
     width: 30%;
     padding-bottom: 95px;
+    cursor: pointer;
 }
 
 .device-pic img {
