@@ -88,16 +88,12 @@ main {
 
 .map-arena {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map img {
     border-radius: 8px;
-}
-
-.map-arena {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .view {
