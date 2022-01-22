@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣手遊網站(Taiwan Mobile game)</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png" alt="" class="nav-logo">
+        <div class="nav-item">
+            <a href="/home.html">Home</a>
+            <a href="/games.html" class="active">Games</a>
+            <a href="/devices.html">Devices</a>
+            <a href="/login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="map-arena">
+            <div class="map">
+                <img src="img/map.jpg" alt="">
+                <a href="#gta">GTA</a>
+                <a href="#amazon">AMAZON</a>
+                <a href="#genshin">Genshin</a>
+                <a href="#leg">LOL</a>
+                <a href="#apex">APEX</a>
+            </div>
+            
+            <div class="view">
+                <img src="/img/games/gtav.jpg" alt="" id="gta">
+                <img src="/img/games/amazon.jpg" alt="" id="amazon" style="display: none;">
+                <img src="/img/games/genshin-hero-mobile.jpg" alt="" id="genshin" style="display: none;">
+                <img src="/img/games/LEG.jpg" alt="" id="leg" style="display: none;">
+                <img src="/img/games/Apex.jpg" alt="" id="apex" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            Copyright 2021 Taiwan Mobile game All Rights Reserved
+        </div>
+    </div>
+</body>
+<script>
+    $(".map>a").click(function()  {
+        $(".view>img").css("display", "none");
+        let id = $(this).attr("href");
+        console.log();
+        $(id).fadeIn();
+    });
+</script>
+</html>
