@@ -46,6 +46,11 @@ body {
     color: dodgerblue;
 }
 
+.container {
+    margin: 0 10vw;
+    padding-top: 5vh;
+}
+
 .cards {
     display: flex;
     justify-content: space-around;
@@ -156,11 +161,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #333;
-}
-
-.container {
-    margin: 0 10vw;
-    padding-top: 5vh;
 }
 
 .copyright {
