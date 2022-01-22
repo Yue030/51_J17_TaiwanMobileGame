@@ -46,6 +46,10 @@ body {
     color: dodgerblue;
 }
 
+main {
+    min-height: calc(100vh - 100px - 2rem);
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
