@@ -151,11 +151,12 @@ body {
     border-radius: 8px;
 }
 
-.footer {
+.view .item p {
     position: fixed;
     top: auto;
     bottom: 0;
     height: 50px;
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
