@@ -146,6 +146,10 @@ main {
     top: 36%;
 }
 
+.view {
+    position: relative;
+}
+
 .view img {
     width: 545px;
     height: 341px;
