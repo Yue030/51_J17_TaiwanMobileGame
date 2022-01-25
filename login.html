@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | T.M.G</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+<header>
+    <nav class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+            alt="" class="nav-logo">
+        <div class="nav-item">
+            <a href="/home.html">Home</a>
+            <a href="/games.html">Games</a>
+            <a href="/devices.html">Devices</a>
+            <a href="/login.html" class="active">Login</a>
+        </div>
+    </nav>
+</header>
+
 <body>
-    
+    <main class="container login-page">
+        <div class="login-arena">
+            <div class="pic">
+                <img src="img/games/gs.jpg" alt="">
+            </div>
+
+            <form action="api.php" method="post">
+                <h1>Login</h1>
+                <div>
+                    <!-- <p>Account: </p> -->
+                    <div class="input-box" style="--icon-src: url('/UserIcon.svg')">
+                        <input id="account" name="acc" type="text" autocomplete="off" placeholder="Account" required>
+                    </div>
+                </div>
+                <div>
+                    <!-- <p>Password: </p> -->
+                    <input id="pw" name="pw" type="password" autocomplete="off" placeholder="Password" required>
+                </div>
+                <div>
+                    <!-- <p>Verification: </p> -->
+                    <input id="verfication_code" name="code" type="text" autocomplete="off" placeholder="Verification Code" required>
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </main>
 </body>
+
+<footer>
+    <div class="copyright">
+        Copyright 2021 Taiwan Mobile game All Rights Reserved
+    </div>
+</footer>
+
 </html>
