@@ -14,12 +14,12 @@
     <nav class="container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
             alt="" class="nav-logo">
-        <div class="nav-item">
-            <a href="/home.html">Home</a>
-            <a href="/games.html">Games</a>
-            <a href="/devices.html" class="active">Devices</a>
-            <a href="/login.html">Login</a>
-        </div>
+            <div class="nav-item">
+                <a href="/home.html">Home</a>
+                <a href="/games.html">Games</a>
+                <a href="/devices.html" class="active">Devices</a>
+                <a href="/login.html">Login</a>
+            </div>
     </nav>
 </header>
 
@@ -28,31 +28,63 @@
         <div class="devices">
             <div class="device-pic">
                 <img src="img/games/amazon.jpg" alt="">
+                <p>Amazon Test</p>
             </div>
             <div class="device-pic">
                 <img src="img/games/gtav.jpg" alt="">
+                <p>GTAV Test</p>
             </div>
             <div class="device-pic">
                 <img src="img/games/genshin-hero-mobile.jpg" alt="">
+                <p>《原神》是米哈遊開發的一款奇幻題材開放世界動作角色扮演遊戲，採用基於抽卡的基本免費及道具收費制。遊戲已在Microsoft Windows、Android、iOS、PlayStation 4和PlayStation 5平台發行[1]，並計劃將在任天堂Switch上發行[2][3]。
+
+                    遊戲劇情於虛構世界的提瓦特大陸上展開，被神明選中的人將被授予引導元素力量的「神之眼」，而最終登上天空島的人會獲得神之心，這些擁有「神之眼」的人被稱為「原神」[4]。玩家將扮演旅行者遊歷七國，尋找自己失散的唯一血親。
+                    
+                    《原神》得到相關媒體的普遍好評，評論稱讚遊戲的戰鬥機制和開放世界的自由度，但對後期的遊戲內容和盈利方式提出了批評。本遊戲在商業上取得了成功，在發行六個月內總收入超過10億美元[5][6]。產品於2021年列入中華人民共和國商務部「2021－2022年度國家文化出口重點企業和重點專案名單」[7]。</p>
             </div>
             <div class="device-pic">
                 <img src="img/games/PUBG.jpg" alt="">
+                <p>PUBG Test</p>
             </div>
             <div class="device-pic">
                 <img src="img/games/LEG.jpg" alt="">
+                <p>LOL Test</p>
             </div>
             <div class="device-pic">
                 <img src="img/games/Apex.jpg " alt="">
+                <p>Apex Test</p>
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox" style="display: none;">
+            <div class="area">
+                <img src="" alt="">
+                <p>NULL</p>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="copyright">
-            Copyright 2021 Taiwan Mobile game All Rights Reserved
-        </div>
-    </footer>
     </div>
 </body>
+
+<footer>
+    <div class="copyright">
+        Copyright 2021 Taiwan Mobile game All Rights Reserved
+    </div>
+</footer>
+
+<script>
+    $(".device-pic>img").click(function (){
+        let pic = $(this).attr("src");
+        let desc = $(this).next().clone();
+        $("#lightbox img").attr("src", pic);
+        $("#lightbox p").html(desc.text());
+        $("#lightbox").fadeIn();
+    });
+
+    $("#lightbox").click(function() {
+        $(this).fadeOut();
+    });
+</script>
 
 </html>
