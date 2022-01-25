@@ -235,6 +235,106 @@ main {
     border-radius: 10px;
 }
 
+.login-page {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+    color: white;
+}
+
+.login-page input::placeholder {
+    color: #aaa;
+}
+
+.login-page input:focus {
+    border: 1px solid #5dafff;
+    padding-left: 45px;
+}
+
+.login-page input[type=submit]  {
+    color: #5dafff;
+    border: 1px solid #5dafff;
+    transition: .3s;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.login-page input[type=submit]:hover {
+    color: white;
+    background: #5dafff;
+}
+
+.login-arena {
+    display: flex;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    box-shadow: 0 0 10px 5px #3333;
+}
+
+.login-arena .pic {
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+    margin: 0;
+}
+
+.login-arena .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.login-arena form {
+    width: 60%;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-arena form p {
+    margin-bottom: 10px;
+}
+
+.login-arena form h1 {
+    width: 100%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login-arena form .input-box::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 37.33px;
+    transition: .5s;
+    background: #5dafff;
+    background-image: var(--icon-src);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-arena form .input-box:focus-within::before {
+    width: 37.33px;
+}
+
 footer {
     height: 3rem;
     width: 100%;
