@@ -37,11 +37,11 @@ nav .nav-item a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
-    transition: 0.2s;
+    transition: .2s;
 }
 
 nav .nav-item a:hover {
-    color: dodgerblue;
+    color: #5dafff;
 }
 
 body {
